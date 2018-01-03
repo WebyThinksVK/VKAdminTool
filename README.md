@@ -24,7 +24,9 @@
 ● chat_name      - Имя беседы (вводить самому)
 
 Это переделанная и русифицированная версия этого скрипта:
+
 https://github.com/TABmk/VKConversation-with-moderators
 
 Автор доработки:
+
 https://vk.com/isaacrulz23
