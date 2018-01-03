@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-    <title>VKAdminTool 2.0 by isaacrulz23</title>
+    <title>VKAdminTool 1.0 by isaacrulz23</title>
 	<meta charset="utf-8">
 </head>
 <body>
