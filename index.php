@@ -16,8 +16,8 @@
         'response_type' => 'code'
     );
 
-	echo "Это VKAdminTool настроенный для беседы {$chat_name}";
-    echo $link = '<p><a href="' . $url . '?' . urldecode(http_build_query($params)) . '">Войти через ВК </a></p>';
+	echo "<h1>Это VKAdminTool настроенный для беседы {$chat_name}</h1>";
+    echo $link = '<p><a style="position:absolute; top:97%; left:0%" href="' . $url . '?' . urldecode(http_build_query($params)) . '"><h2>Войти через ВК</h2> </a></p>';
 
 if (isset($_GET['code'])) {
     $result = false;
@@ -46,14 +46,14 @@ if (isset($_GET['code'])) {
 
 		if ($result && $userInfo['uid'] == in_array($userInfo['uid'], $moder_id)) {
 		
-		echo $edit123 = '<p><a href="name.php">Cменить имя беседы обратно</a></p>';		
-		echo "<form action='remove.php' method='post'><p>ID человека (людей): <input type='text' name='kickid' />" ;
+		echo $edit123 = '<form action="name.php"><button type="submit" class="butt">Сменить название</button></form>';		
+		echo "<form action='remove.php' method='post'><p><h2>ID человека (людей):</h2> <input type='text' name='kickid' />" ;
 		if ($reason_message == true){
-		echo "</p><p>Причина: <input type='text' name='reason' /></p>" ;
+		echo "</p><p><h2>Причина:</h2> <input type='text' name='reason' /></p>" ;
 		}
-		echo "<p><input type='submit' /> Эта кнопка служит для того, чтобы кикнуть мразоту!!!</p></form>";
+		echo "<p><input type='submit' class='butt' value='Кикнуть' /></p></form>";
 		}else{
-			echo "Доступ запрещён! Вас нету в списке модераторов беседы {$chat_name}!";
+			echo "<h3>Доступ запрещён! Вас нету в списке модераторов беседы {$chat_name}!</h3>";
 		}
 }
 ?>

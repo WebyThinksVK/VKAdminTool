@@ -5,7 +5,14 @@ $client_id      = ""; // Создайте приложение здеся - http
 $client_secret  = ""; // Секретный Ключ в настройках тоже
 $redirect_uri   = "/index.php"; // Полный адрес нахождения Index страницы скрипта
 $moder_id       = array("112851185", "1", "123123123"); // Впишите сюда id Модеров беседы
-$reason_message = true; // Включение и выключение причины исключения
+$reason_message = false; // Включение и выключение причины исключения
 $bot_prefix     = "(HAKAZAHNE EbLAHOB)"; // Префикс скрипта для причины
 $chat_name      = "Что-то!"; // Имя беседы (вводить самому)
+$design         = true; //Дизайн Вкл - true Выкл - false     Фон меняется в css/image
+
+//Всё что дальше, не трогать!!!!!!
+$back = '<h2><form action="index.php"><button type="submit" class="butt">Вернуться обратно</button></form></h2>';
+if($design == true){
+echo "<link rel='stylesheet' href='css/style.css'>";
+}
 ?>
