@@ -1,0 +1,35 @@
+body {
+ background-image: url("image/1.jpg");
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+
+h1 {
+ color: #FFFFFF;
+}
+
+h2 {
+ color: #00FF00;
+}
+
+h3 {
+ color: #FF0000;
+}
+
+.butt {
+width:150px;
+height:50px;
+border-radius:20px;
+background:#459DE5;
+color:#fff;
+font-size:18px;
+cursor:pointer;
+}
+
+.butt:hover{
+background:#358DE5;
+}
+
+.butt:focus{
+outline:none;
+}
